@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ - 专业网络解决方案</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 一键返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="JQ Logo">
+                <h1>JQ<span>技术</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="#features">功能介绍</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="login.html">登录/注册</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播图 -->
+    <section class="banner">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/banner1.jpg" alt="轮播图1 - 高速网络">
+                <div class="slide-text">
+                    <h2>高速网络解决方案</h2>
+                    <p>提供稳定、高速的网络连接服务</p>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="images/banner2.jpg" alt="轮播图2 - 全球覆盖">
+                <div class="slide-text">
+                    <h2>全球网络覆盖</h2>
+                    <p>连接世界，无界沟通</p>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="images/banner3.jpg" alt="轮播图3 - 安全稳定">
+                <div class="slide-text">
+                    <h2>安全稳定保障</h2>
+                    <p>多层加密，保护您的数据安全</p>
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍部分 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">功能介绍</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>高速连接</h3>
+                    <p>采用最新的网络技术，提供超高速的网络连接，满足您的各种需求。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>安全保护</h3>
+                    <p>多层次的安全防护，确保您的数据和隐私得到最大程度的保护。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>全球节点</h3>
+                    <p>全球多个服务器节点，确保您在任何地方都能获得稳定的连接。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7支持</h3>
+                    <p>全天候客户服务支持，随时为您解决使用过程中遇到的问题。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>地址</h3>
+                            <p>M78星云隔壁小卖部</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>电话</h3>
+                            <p>+86 6677885987</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>邮箱</h3>
+                            <p>M78@UTR.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>工作时间</h3>
+                            <p>周一至周五: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>发送消息</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="您的消息" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <h2>BR<span>技术导航</span></h2>
+                    </div>
+                    <p>提供专业的网络技术解决方案，让您畅享高速稳定的网络体验。</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#features">功能介绍</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li><a href="login.html">登录/注册</a></li>
+                    </ul>
+                </div>
+                <div class="student-info">
+                    <h3>学生信息</h3>
+                    <p>学号: 25216950221</p>
+                    <p>姓名: 陈竞斌</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 JQ技术. 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
